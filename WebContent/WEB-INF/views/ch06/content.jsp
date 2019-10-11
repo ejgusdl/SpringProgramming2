@@ -18,11 +18,57 @@
 			function btnLogout() {
 				location.href = "logout";
 			}
+			
+			function jsonDownload1() {
+				$.ajax({
+					url: "jsonDownload1",
+					success: function(data) {
+						/*$("#bno").html(data.bno);
+						$("#btitle").html(data.btitle);
+						$("#writer").html(data.writer);
+						$("#date").html(data.date);
+						$("#hitcount").html(data.hitcount);*/
+						
+						var html = "";
+					    html += "<tr>";
+					    html += "	<td>" + data.bno +"</td>";
+					    html += "	<td>" + data.btitle +"</td>";
+					    html += "	<td>" + data.writer +"</td>";
+					    html += "	<td>" + data.date +"</td>";
+					    html += "	<td>" + data.hitcount +"</td>";
+					    html += "</tr>";
+					    $("tbody").append(html);
+					      
+					      
+					  	
+					}
+				});
+			}
+			
+			function jsonDownload2() {
+				$.ajax({
+					url: "jsonDownload2",
+					success: function(data) {						
+						var html = "";
+					    html += "<tr>";
+					    html += "	<td>" + data.bno +"</td>";
+					    html += "	<td>" + data.btitle +"</td>";
+					    html += "	<td>" + data.writer +"</td>";
+					    html += "	<td>" + data.date +"</td>";
+					    html += "	<td>" + data.hitcount +"</td>";
+					    html += "</tr>";
+					    $("tbody").append(html);
+					      
+					      
+					  	
+					}
+				});
+			}
 		</script>
 	
 	</head>
 	<body>
-		<h5>[content.jsp]</h5>
+		<h5>[HttpSession을 이용해서 로그인 구현]</h5>
 		<div>
 			<c:if test="${loginResult != 'success'}">
 				<form id="loginForm" method="post" action="login">
@@ -50,5 +96,46 @@
 				</div>
 			</c:if>			
 		</div>
+		
+		
+		
+		<h5>[OutputStream을 이용해서 로그인 구현]</h5>
+		<div>
+			<img src="<%=application.getContextPath()%>/resources/image/Ka.jpg" width="100"/>
+			<br/>
+			<img src="fileDownload?fname=Kak.jpg" width="100"/>
+			<br/>
+			<a href="fileDownload?fname=Kak.jpg">파일 다운로드</a>
+			<br/>
+		</div>
+			<br/>
+			<h5>[Writer를 이용해서 JSON 데이터 다운로드]</h5>
+			<a href="javascript:jsonDownload1()">JSP에서 생성</a> <br/>
+			<a href="javascript:jsonDownload2()">Controller에서 생성</a><br/>
+			<div>
+				<table class="table table-sm">
+ 					<thead>
+					    <tr>
+					      <th scope="col">번호</th>
+					      <th scope="col">제목</th>
+					      <th scope="col">글쓴이</th>
+					      
+					      <th scope="col">날짜</th>
+					      <th scope="col">조회수</th>
+					    </tr>
+					 </thead>
+					 <tbody>
+						
+					 <!-- <tr>
+					      <td id="bno"></td>
+					      <td id="btitle"></td>
+					      <td id="writer"></td>					     
+					      <td id="date"></td>
+					      <td id="hitcount"></td>
+					      
+					  </tr>	 -->								
+					 </tbody>
+					 </table>
+			</div>
 	</body>
 </html>

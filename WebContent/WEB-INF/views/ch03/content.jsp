@@ -16,10 +16,10 @@
 </head>
 <body>
 	<p>
-		<a href="join?mid=fall&mname=홍길동&mpassword=12345&mage=32&mbirth=1988-11-13"
+		<a href="join?mid=ejgusdl&mname=박도현&mpassword=12345&mage=32&mbirth=1988-11-13"
 			class="btn btn-primary">get 방식으로 테스트</a>
-		<a href="join2?mid=fall&mname=홍길동&mpassword=12345&mbirth=1988-11-13"
-			class="btn btn-primary">get 방식으로 테스트(객체로 받기)</a>
+		<a href="join2?mid=ejgusdl&mname=박도현&mpassword=12345&mage=32&mbirth=1988-11-13"
+			class="btn btn-info">get 방식으로 테스트(객체로 받기)</a>
 	</p>
 
 	<p>

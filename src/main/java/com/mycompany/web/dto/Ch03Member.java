@@ -11,6 +11,7 @@ public class Ch03Member {
 	private int mage;
 	@DateTimeFormat(pattern="yyyy-MM-dd")
 	private Date mbirth;
+	
 	public String getMid() {
 		return mid;
 	}

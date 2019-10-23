@@ -2,13 +2,13 @@ package com.mycompany.web.dto;
 
 import java.util.Date;
 
-public class Ch06Board {
+public class Ch30Board {
 	private int bno;
 	private String btitle;
 	private String bcontent;
-	private String writer;
-	private Date date;
-	private int hitcount;
+	private String bwriter;
+	private Date bdate;
+	private int bhitcount;
 	
 	public int getBno() {
 		return bno;
@@ -28,24 +28,23 @@ public class Ch06Board {
 	public void setBcontent(String bcontent) {
 		this.bcontent = bcontent;
 	}
-	public String getWriter() {
-		return writer;
+	public String getBwriter() {
+		return bwriter;
 	}
-	public void setWriter(String writer) {
-		this.writer = writer;
+	public void setBwriter(String bwriter) {
+		this.bwriter = bwriter;
 	}
-	public Date getDate() {
-		return date;
+	public Date getBdate() {
+		return bdate;
 	}
-	public void setDate(Date date) {
-		this.date = date;
+	public void setBdate(Date bdate) {
+		this.bdate = bdate;
 	}
-	public int getHitcount() {
-		return hitcount;
+	public int getBhitcount() {
+		return bhitcount;
 	}
-	public void setHitcount(int hitcount) {
-		this.hitcount = hitcount;
+	public void setBhitcount(int bhitcount) {
+		this.bhitcount = bhitcount;
 	}
-	
-	
+
 }

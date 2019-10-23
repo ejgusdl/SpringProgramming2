@@ -41,8 +41,13 @@
 		</p>
 		
 		<p>		
-		<button id="btn2" onclick="btn2Click()" type="button" class="btn btn-info">연결 테스트</button>
+		<button id="btn2" onclick="btn2Click()" type="button" class="btn btn-info">멤버 정하기</button>
 		<div id="div2"></div>
 		</p>
+		
+		<p>		
+		<a href="boardList?pageNo=1"  class="btn btn-info">게시판</a>
+		</p>
+		
 	</body>
 </html>

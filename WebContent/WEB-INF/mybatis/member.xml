@@ -14,4 +14,9 @@
 		<result column="mpassword" property="mpassword"/>
 	</resultMap>
 	
+	<insert id="insert" parameterType="com.mycompany.web.dto.Ch10Member">
+		insert into member (mid, mname, mpassword)
+		values(#{mid}, #{mname}, #{mpassword})
+	</insert>
+	
 </mapper>

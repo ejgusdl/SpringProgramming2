@@ -1,5 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8"%>
-<%@ page import="com.mycompany.web.dto.*"%>
+
 
 <h5>멤버 정보</h5>
 <table class="table table-sm">

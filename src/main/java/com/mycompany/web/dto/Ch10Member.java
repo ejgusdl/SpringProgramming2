@@ -23,4 +23,5 @@ public class Ch10Member {
 	public void setMpassword(String mpassword) {
 		this.mpassword = mpassword;
 	}
+		
 }

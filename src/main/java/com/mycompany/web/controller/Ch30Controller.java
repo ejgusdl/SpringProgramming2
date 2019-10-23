@@ -26,7 +26,7 @@ public class Ch30Controller {
 	@RequestMapping("/boardList")
 	public String boardList(Model model, @RequestParam(defaultValue="1") int pageNo) {
 		
-		//페이지당 행수 이것은 테스트다 2번째 테스트 3번째 테스트
+		//페이지당 행수 이것은 테스트다 2번째 테스트 3번째 테스트 4번째 테스트
 		int rowsPerPage = 10;
 		//이전, 다음을 클릭했을 때 나오는 페이지 수
 		int pagesPerGroup =5;

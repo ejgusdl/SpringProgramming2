@@ -66,7 +66,7 @@
 		  <div class="form-group">
 		    <label for="mname">NAME</label>
 		    <input id="mname" name="mname" type="text" class="form-control" placeholder="이름를 입력하세요">
-		    <span id="mnameError" class="error" style="color:red"></span>
+		    <span id="mnameError" class="error" style="color:red"></span>		  
 		  </div>
 		  <div class="form-group">
 		    <label for="mpassword">PASSWORD</label>

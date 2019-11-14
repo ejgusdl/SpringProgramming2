@@ -12,10 +12,10 @@
 		<script type="text/javascript">
 			$(function() {
 				//MQTT Broker와 연결하기
-				client = new Paho.MQTT.Client(location.hostname, 61614, "clientId");
+				client = new Paho.MQTT.Client(location.hostname, 61614, "clientId"+new Date().getTime());
 				client.onMessageArrived = onMessageArrived;
 				client.connect({onSuccess:onConnect});
-			})
+			});
 			
 			
 			//연결이 완료되었을 때 자동으로 실행(콜백) 되는 함수
